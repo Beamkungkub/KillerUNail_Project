@@ -196,10 +196,10 @@ demo_data.sql
 
 เปิดไฟล์ผ่าน Azure Data Studio / SSMS แล้ว Execute เรียงตามลำดับนี้ **ห้ามสลับ**:
 
-1. `HospitalDB_KillerUNai.sql` — สร้างฐานข้อมูล + ตารางหลัก (รันครั้งแรกครั้งเดียวพอ ห้ามรันซ้ำ)
-2. `update_v2.sql` — เพิ่มตาราง/คอลัมน์ใหม่ทั้งหมด (รันซ้ำได้ปลอดภัย)
-3. `INSERT.sql` — ใส่ข้อมูลตัวอย่าง Patient/Doctor/Room/Medicine
-4. `demo_data.sql` — ใส่ข้อมูลตัวอย่าง Appointment/Dispensing/Blacklist สำหรับสาธิต
+1. `01_create_database.sql` — สร้างฐานข้อมูล + ตารางหลัก (รันครั้งแรกครั้งเดียวพอ ห้ามรันซ้ำ)
+2. `02_update_schema.sql` — เพิ่มตาราง/คอลัมน์ใหม่ทั้งหมด (รันซ้ำได้ปลอดภัย)
+3. `03_insert_master_data.sql` — ใส่ข้อมูลตัวอย่าง Patient/Doctor/Room/Medicine
+4. `04_insert_demo_data.sql` — ใส่ข้อมูลตัวอย่าง Appointment/Dispensing/Blacklist สำหรับสาธิต
 
 ก่อน Execute แต่ละไฟล์ เช็ค dropdown บนแถบเครื่องมือว่าเลือก database เป็น **`HospitalDB`** แล้ว (ยกเว้นไฟล์แรกที่ยังไม่มีให้เลือก เพราะมันสร้างฐานข้อมูลเอง)
 
